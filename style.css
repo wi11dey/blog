@@ -1,3 +1,135 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+/* Original code from https://morgan3d.github.io/markdeep/latest/latex.css under the following license: */
+/*
+BSD 2-Clause License
+
+Copyright (c) 2020, Morgan McGuire
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+*/
+
+body#md {
+    max-width: 440;
+    font-size: 14pt;
+    color: #000;
     background-color: #fbf7f0;
+    font-family: "EB Garamond", serif;
+}
+
+.md div.title {
+    font-family: "EB Garamond";
+    font-weight: normal;
+    font-size: 28pt;
+    padding-top: 170px;
+    padding-bottom: 12px;
+}
+
+@media print {
+    body {
+	max-width: 64%;
+    }
+
+    .md div.title {
+	padding-top: 150px;
+    }
+}
+
+.md div.subtitle {
+    font-size: 15px;
+    padding-bottom: 12px;
+}
+
+.md h1, .md div.nonumberh1 {
+    border: none;
+    font-size: 18px;
+    color: #000;
+}
+
+.md h2, .md div.nonumberh2 {
+    border: none;
+    font-size: 15px;
+    color: #000;
+}
+
+.md sup {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+
+.md sub { 
+    top: 0.4em; 
+}
+
+.md h3, .md h4, .md h5, .md h6, .md div.nonumberh3, .md div.nonumberh4, .md div.nonumberh5, .md div.nonumberh6 {
+    border: none;
+    font-size: 14px;
+    color: #000;
+}
+
+.md div.imagecaption {
+    font-style: normal;
+}
+
+.md hr {
+    height: 0px;
+    border: none;
+    border-top: 0.1pt solid #777;
+}
+
+.md div.endnote {
+    font-size: 11px;
+}
+
+.md div.bib b {
+    font-weight: normal;
+}
+
+.md code {
+    font-size: 82%;
+}
+
+.md svg.diagram {
+    zoom: 80%;
+}
+
+
+.md ul li.asterisk:before, .md ul li.minus:before {
+    content: "●";
+    display: block;
+    float: left;
+    width: 1.2em;
+    margin-left: -18px;
+}
+
+.md ul li.asterisk, .md ul li.minus {
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding-left: 4pt;
+}
+
+.md ol li {
+    margin-bottom: 10px;
+    padding-left: 4pt;
 }

@@ -30,7 +30,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
 body#md {
-    max-width: 440;
+    max-width: 440px;
     font-size: 14pt;
     color: #000;
     background-color: #fbf7f0;
@@ -38,7 +38,7 @@ body#md {
 }
 
 .md div.title {
-    font-family: "EB Garamond";
+    font-family: "EB Garamond", serif;
     font-weight: normal;
     font-size: 28pt;
     padding-top: 170px;

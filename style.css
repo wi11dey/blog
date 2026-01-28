@@ -61,12 +61,14 @@ body#md {
 }
 
 .md h1, .md div.nonumberh1 {
+    font-family:"EB Garamond", serif;
     border: none;
     font-size: 18px;
     color: #000;
 }
 
 .md h2, .md div.nonumberh2 {
+    font-family:"EB Garamond", serif;
     border: none;
     font-size: 15px;
     color: #000;
@@ -83,6 +85,7 @@ body#md {
 }
 
 .md h3, .md h4, .md h5, .md h6, .md div.nonumberh3, .md div.nonumberh4, .md div.nonumberh5, .md div.nonumberh6 {
+    font-family:"EB Garamond", serif;
     border: none;
     font-size: 14px;
     color: #000;
@@ -113,7 +116,6 @@ body#md {
 .md svg.diagram {
     zoom: 80%;
 }
-
 
 .md ul li.asterisk:before, .md ul li.minus:before {
     content: "●";
